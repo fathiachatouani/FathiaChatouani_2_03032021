@@ -257,14 +257,8 @@ form{
     background-color: #F2F2F2;
     border: 2px solid #F2F2F2;
     border-radius: 15px;
-    padding: 40px 0px 40px 30px;
-    width: 70%;
-    
-    
-}
-
-.bloc_h h2{
-    font-size: 18px;
+    padding: 20px 0px 30px 30px;
+    width: 70%;  
 }
 
 .cards_h{
@@ -337,7 +331,7 @@ color: #ddd;
     background-color: #F2F2F2;
     border: 2px solid #F2F2F2;
     border-radius: 15px; 
-    padding: 40px 30px 40px 30px;
+    padding: 20px 30px 20px 30px;
     margin-left: 30px;
     width: 30%;
 }
@@ -387,6 +381,7 @@ color: #ddd;
 
 h4{
     margin-top: 10px;
+    font-size: 18px;
 }
 
 
