@@ -15,36 +15,29 @@
 
 	<body>
 
+
+
+
+
+
         <header>
+
+			<a href="#"><h1><img class="logo" src="img/logo/Reservia.svg" alt="logo reservia"></h1></a>
 
             <nav>
 				
 				<ul>
-
-					<li><a href="#"><h1><img src="img/logo/Reservia.svg" alt="logo reservia"></h1></a></li>
 					
 					<li>
-						<a href="#">Hebergements</a></li>
+						<a href="#hebergements">Hébergements</a></li>
 					<li>
-						<a href="#">Activités</a></li>
+						<a href="#activites">Activités</a></li>
 					<li>
 						<a href="#">S'inscrire</a></li>
 
 				</ul>
 
 			</nav>
-
-
-				<!-- reponsive mobile -->
-
-				<ul class="menu_mobile">
-					<li>
-						<a href="#">Hebergements</a></li>
-					<li>
-						<a href="#">Activités</a></li>
-				</ul>
-
-
 
         </header>
 
@@ -53,7 +46,7 @@
 
 		<!-- zone de saisie + bouton de recherche -->
 
-		<form method="post" action="traitement.php">
+		<form method="post" action="#">
 			<div class="iconemap"><i class="fas fa-map-marker-alt"></i></div>
 			  <input type="text" id="zonedesaisie" value="Marseille,France"/>
 			<button class="bouton">Rechercher</button>
@@ -102,7 +95,7 @@
 		<div class="info">
 
 			<div class= "iconecercle"><i class="fas fa-info-circle"></i></div>
-			<div class="infor">Plus de 500 logements sont disponibles dans cette ville</div>
+			<p class="infor">Plus de 500 logements sont disponibles dans cette ville</p>
 
 		</div>
 
@@ -110,49 +103,56 @@
 
 <!-- BLOCS CARD -->
 
-<section class="container"> 
+<section class="container" id="hebergements">
 
 	<div class="bloc_h">
-		<h2>Hébergements à Marseille</h2>
+		
+			<h2>Hébergements à Marseille</h2>
 
 		<div class="cards_h">
-			<div class="card_h">
-				<a href=""><img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="visuel activite marseille"></a>
+			
+				<div class="card_h">
+					<a href="">
+					<img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="visuel activite marseille">
 
-				<div class="description_h"> 
-					<h3>Auberge de Cannebière</h3>
-					<p>Nuit à partir de <b>25€</b></p>
-					<div class="star4">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
+					<div class="description_h"> 
+						<h3>Auberge de Cannebière</h3>
+						<p>Nuit à partir de <b>25€</b></p>
+						<div class="star4">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
 					</div>
+					</a>
 				</div>
-					
-			</div>
+			
 
-		
-			<div class="card_h">
-				<img src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="visuel activite marseille">
+			
+				<div class="card_h">
+					<a href="">
+					<img src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="visuel activite marseille">
 
-				<div class="description_h"> 
-						<h3>Hôtel du port</h3>
-						<p>Nuit à partir de <b>52€</b></p>
-					<div class="star5">
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
+					<div class="description_h"> 
+							<h3>Hôtel du port</h3>
+							<p>Nuit à partir de <b>52€</b></p>
+						<div class="star5">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+						</div>
 					</div>
+				</a>	
 				</div>
-					
-			</div>
+			
 
 
 			<div class="card_h">
+				<a href="">
 				<img src="img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="visuel activite marseille">
 
 				<div class="description_h"> 
@@ -166,12 +166,13 @@
 						<i class="fas fa-star"></i>
 					</div>
 				</div>
-					
+			</a>		
 			</div>
 
 
 
 			<div class="card_h">
+				<a href="">
 				<img src="img/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="visuel activite marseille">
 
 				<div class="description_h"> 
@@ -185,13 +186,14 @@
 						<i class="fas fa-star"></i>
 					</div>
 				</div>
-					
+			</a>		
 			</div>
 
 
 
 			<div class="card_h">
-				<img src="img/hebergements/4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="visuel activite marseille">
+				<a href="">
+				<img src="img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="visuel activite marseille">
 
 				<div class="description_h"> 
 						<h3>Auberge Le Panier</h3>
@@ -204,11 +206,12 @@
 						<i class="fas fa-star"></i>
 					</div>
 				</div>
-					
+			</a>		
 			</div>
 
 
 			<div class="card_h">
+				<a href="">
 				<img src="img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="visuel activite marseille">
 
 				<div class="description_h"> 
@@ -222,7 +225,7 @@
 						<i class="fas fa-star"></i>
 					</div>
 				</div>
-					
+			</a>		
 			</div>
 
 		<p><b>Afficher plus</b></p>
@@ -239,26 +242,33 @@
 			<i class="fas fa-chart-line"></i>
 		</div>
 
-			<div class="cards_v">
-				<div class="card_v">
-					<img src="img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="visuel activite marseille">
+		
+			
+	
+				<div class="cards_v">
+					<a href="">		
+					<div class="card_v">
+		
+						<img src="img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="visuel activite marseille">
 
-					<div class="description_v">
-							<h3>Hôtel Le soleil du matin</h3>
-							<p>Nuit à partir de <b>128€</b></p>
-						<div class="star5">
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
+						<div class="description_v">
+								<h3>Hôtel Le soleil du matin</h3>
+								<p>Nuit à partir de <b>128€</b></p>
+							<div class="star5">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
 						</div>
-					</div>
 				</div>
+			</a>
 
 			
-
+				<a href="">
 					<div class="card_v">
+				
 						<img src="img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="visuel activite marseille">
 	
 						<div class="description_v">
@@ -271,26 +281,28 @@
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
 							</div>
-						</div>
+						</div>	
 					</div>
+				</a>
 
 
-
-						<div class="card_v">
-							<img src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="visuel activite marseille">
-		
-							<div class="description_v">
+						<a href="">
+							<div class="card_v">
+								<img src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="visuel activite marseille">
+			
+								<div class="description_v">
 									<h3>Hôtel Tout bleu et blanc</h3>
 									<p>Nuit à partir de <b>68€</b></p>
-								<div class="star4">
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
+									<div class="star4">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
 								</div>
 							</div>
-						</div>
+						</a>
 
 			</div>
 
@@ -301,77 +313,83 @@
 	<!-- DERNIER BLOC -->
 
 
-	<h2 class="marseille">Activités à Marseille</h2>
+	<h2 class="marseille" id="activites">Activités à Marseille</h2>
 
 <div class="blocs">
 
 	<div class="bloc3">
 		
-		<div class="cardz">
-
-			<img class="cardi" src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="visuel activite marseille">
-			
-			<p><b>Vieux Port</b></p>
-
-		</div>
-
-	</div>
-
-
-	<div class="bloc3">
+		<a href="">
 
 			<div class="cardz">
-
-			<img class="cardi2" src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="visuel activite marseille">
-			
-			<p class="text2"><b>Fort de Pomègues</b></p>
-
-		</div>
-		<div class="cardz">
-
-			<img class="cardi3" src="img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="visuel activite marseille">
-			
-					<p class="text3"><b>îles du Frioul</b></p>
-	
+				<img class="cardi" src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="visuel activite marseille">
+				<p><b>Vieux Port</b></p>
 			</div>
 
+		</a>
+
+	</div>
+
+
+
+	<div class="bloc3">
+		
+		<a href="">
+			<div class="cardz">
+
+				<img class="cardi2" src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="visuel activite marseille">
+				<p class="text2"><b>Fort de Pomègues</b></p>
+
+			</div>
+		</a>
+
+
+		<a href="">
+			<div class="cardz">
+
+				<img class="cardi3" src="img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="visuel activite marseille">
+				<p class="text3"><b>îles du Frioul</b></p>
+	
+			</div>
+		</a>
 	</div>
 
 
 
 
 	<div class="bloc3">
-
-		<div class="cardz">
-
-		<img class="cardi4" src="img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="visuel activite marseille">
-		
+		<a href="">
+			<div class="cardz">
+			
+				<img class="cardi4" src="img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="visuel activite marseille">
 				<p class="text4"><b>Parc National des Calanques</b></p>
-
-		</div>
-
+		
+			</div>
+		</a>
 	</div>
 
 
 
 	<div class="bloc3">
 
-		<div class="cardz">
-
-		<img class="cardi5" src="img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="visuel activite marseille">
-		
-				<p class="text5"><b>Notre-Dame-de-la-Garde</b></p>
-
-		</div>
-		
-
+		<a href="">
 			<div class="cardz">
-		
-				<img class="cardi6" src="img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="visuel activite marseille">
-				
-					<p class="text6"><b>Parc Longchamps</b></p>
-	
+
+				<img class="cardi5" src="img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="visuel activite marseille">
+				<p class="text5"><b>Notre-Dame-de-la-Garde</b></p>
+			
 			</div>
+		</a>
+		
+
+		<a href="">
+			<div class="cardz">
+				
+				<img class="cardi6" src="img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="visuel activite marseille">
+				<p class="text6"><b>Parc Longchamps</b></p>
+			
+			</div>
+		</a>
 
 	</div>
 
@@ -403,30 +421,24 @@
 
 	<footer>
 
-		<div>
 			<ul>
 				<li>A propos</li>
 				<li><a href="#" title="Fonctionnement du site">Fonctionnement du site</a></li>
 				<li><a href="#" title="Conditions générales de vente">Conditions générales de vente</a></li>
 				<li><a href="#" title="Données et confidentialité">Données et confidentialité</a></li>
 			</ul>
-		</div>
 
-		<div>
 			<ul>
 				<li>Nos hébergement</li>
 				<li><a href="#" title="Charte qualité">Charte qualité</a></li>
 				<li><a href="#" title="Soumettre votre hôtel">Soumettre votre hôtel</a></li>
 			</ul>
-		</div>
 
-		<div>
 			<ul>
 				<li>Assistance</li>
 				<li><a href="#" title="Centre d'aide">Centre d'aide</a></li>
 				<li><a href="#" title="Nous contacter">Nous contacter</a></li>
 			</ul>
-		</div>
 
 
 

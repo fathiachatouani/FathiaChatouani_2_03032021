@@ -6,17 +6,12 @@
 	box-sizing: border-box;
 }
 
-
-html,
 body {
 	margin : 0;
 	padding: 0;
-	border : 0;
-	vertical-align: baseline;
 }
 
 html {
-	height: 100%;
 	font-size: 62.5%;
 	cursor: default;
 }
@@ -29,17 +24,33 @@ body {
 	font-size: 16px;
 	line-height: 22px;
 	font-family: 'Raleway', Arial, sans-serif;
+    overflow-x: hidden;
 }
+
+h2{
+    font-size: 22px;
+}
+
+
 
 
 
 /*  HEADER LOGO + MENU */
 
+header{
+    display: flex;
+    margin-bottom: 30px;
+    margin: auto;
+    max-width: 1440px;
+    padding: 0 50px 0 50px;
+}
+
 nav{
     width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 50px 50px 50px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
 }
 
 
@@ -47,6 +58,8 @@ nav{
             padding: 0;
             margin: 0;
             display: flex;
+            justify-content: space-around;
+            width: 400px
         }
 
                 header nav ul li{
@@ -57,9 +70,6 @@ nav{
                         header nav ul li a{
                             color: #000;
                             text-decoration: none;
-                            display: block;
-                            height: 100%;
-                
                         }
 
                                 header nav ul li h1{
@@ -92,23 +102,21 @@ nav{
 
 /* BODY */
 
-.titre2 h2{
-    display: flex;
-    margin: 0 auto; 
-    width: 100%;
+.titre2{
+    margin: 0 auto;
+    /* width: 100%; */
     max-width: 1440px;
-    padding: 0 50px 0 50px;
+    padding: 0 50px 0 50px; 
+}
+
+.titre2 h2{
+    margin: 0 auto; 
+    max-width: 1440px;
     font-size: 20px;
 }
 
-/*.titre2 h2{
-    margin: 0;
-}*/
-
-
 
 .zone_texte{
-    display: flex;
     margin: 0 auto;
     width: 100%;
     max-width: 1440px;
@@ -121,7 +129,7 @@ form{
     display: flex;
     padding: 0 50px 0 50px; 
     margin: 0 auto;
-    width: 100%;
+    /* width: 100%; */
     max-width: 1440px;
     margin-bottom: 30px;
 
@@ -131,11 +139,11 @@ form{
 #zonedesaisie{
     height: 40px;
     width: 250px;
-    border-left: none;
     padding: 10px;
     font-weight: 700;
     border: 2px solid#F2F2F2;
-    
+    border-right: none;
+
 }
 
 .bouton{
@@ -164,7 +172,7 @@ form{
     display: flex;
     padding: 0 50px 0 50px; 
     margin: 0 auto;
-    width: 100%;
+    /* width: 100%; */
     max-width: 1440px;
     margin-bottom: 30px;
 
@@ -183,9 +191,8 @@ form{
     border-radius: 50px;
     border-left: none;
     margin-left: 20px;
-    min-width: 100px;
+    /* min-width: 100px; */
     cursor: pointer;
-
 }
 
 .filtre{
@@ -193,8 +200,6 @@ form{
     padding: 0 10px;
     display: flex;
     align-items: center;
-    
-
 }
 
 .icone{
@@ -211,10 +216,6 @@ form{
     background-color: #DEEBFF;
     border-radius: 50px;
 } 
-
-.fusion:hover .filtre{
-    background-color: #DEEBFF;
-} 
     
 .fusion:hover .icone{
     background-color: #DEEBFF;
@@ -224,7 +225,7 @@ form{
     display: flex;
     padding: 0 50px 0 50px; 
     margin: 0 auto;
-    width: 100%;
+    /* width: 100%; */
     max-width: 1440px;
     margin-bottom: 30px;
 }
@@ -238,13 +239,14 @@ form{
 .infor{
      padding-left: 10px; 
      font-size: 14px;
+     margin: 0px;
 }
 
 
 /* BLOC HORIZONTAL DE 6 CARDS */
 
 .container{
-    width: 100%;
+    /* width: 100%; */
     max-width: 1440px;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -255,16 +257,14 @@ form{
 
 .bloc_h{
     background-color: #F2F2F2;
-    border: 2px solid #F2F2F2;
     border-radius: 15px;
-    padding: 20px 0px 30px 30px;
-    width: 70%;  
+    padding: 20px 0px 0px 30px;  
 }
+
 
 .cards_h{
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .card_h{
@@ -273,15 +273,19 @@ form{
     border-radius: 15px;
     width: calc( ( 100% - 90px ) / 3 );
     box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.6);
-    margin: 0px 30px 30px 0px;
-    
+    margin: 0px 30px 30px 0px; 
+}
+
+.card_h a {
+    color: #000;
+    text-decoration: none; 
 }
 
 .bloc_h img{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px; 
     width: 100%;
-    height: 130px;
+    height: 100px;
     object-fit: cover;
 }
 
@@ -303,6 +307,7 @@ form{
 
 .star3{
     color: #0065FC;
+    font-size: 12px;
 }
 
 .star3 i:nth-child(4),
@@ -313,6 +318,7 @@ form{
 
 .star4{
     color:#0065FC;
+    font-size: 12px;
 }
 
 .star4 i:last-child {
@@ -321,6 +327,7 @@ color: #ddd;
 
 .star5{
     color:#0065FC;
+    font-size: 12px;
 }
 
 
@@ -329,30 +336,40 @@ color: #ddd;
 
 .bloc_v{
     background-color: #F2F2F2;
-    border: 2px solid #F2F2F2;
     border-radius: 15px; 
     padding: 20px 30px 20px 30px;
     margin-left: 30px;
     width: 30%;
 }
 
+.cards_v{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 470px;
+    
+
+}
+
 .card_v{
     background-color: #fff;
+    display: flex;
     padding: 4px ;
     border-radius: 15px;
     box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.6);
-    margin: 0px 30px 30px 0px;
-    height: 150px;
-    width: 100%;
-    display: flex;
+    /* margin: 0px 30px 30px 0px; */
+    height: 130px;
+    /* width: 100%; */
+}
 
-
+.cards_v a{
+    text-decoration: none;
+    color: #000;
 }
 
 
 .bloc_v img{
     width: 130px;
-    height: 140px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     object-fit: cover;
@@ -369,7 +386,7 @@ color: #ddd;
 }
 
 .description_v p{
-    margin: 5px 0px 45px 0px;
+    margin: 5px 0px 20px 0px;
     
 }
 
@@ -396,10 +413,8 @@ h4{
 /*                              Bloc   3 */
 
 .blocs{
-    width: 100%;
     max-width: 1440px;
-    margin: 0 auto;
-    margin-bottom: 50px;
+    margin: 0 auto 50px auto;
     padding: 0 50px; 
     display: flex;
 }
@@ -407,6 +422,18 @@ h4{
 .bloc3{
     display: flex;
     flex-direction: column;
+    margin-right: auto;
+}
+
+.bloc3 a{
+    text-decoration: none;
+    color: #000;
+    width: min-content;
+}
+
+
+.bloc3:last-child{
+    margin-right: 0;
 }
 
 
@@ -416,18 +443,15 @@ h4{
     border-top-left-radius: 15px;
     display: flex;
     flex-wrap: wrap;
-    margin-right: 40px;
+    text-decoration: none;
+    color:#000;
 }
 
-
-
 .cardi{
-    background-color: #fff;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px; 
     height: 400px;
     width: 300px;
-    display: flex;
     object-fit: cover;
 }
 
@@ -445,7 +469,7 @@ h4{
 
 .marseille{
     margin: 0 auto;
-    width: 100%;
+    /* width: 100%; */
     max-width: 1440px;
     padding: 0px 50px;
     margin-bottom: 20px;
@@ -455,12 +479,10 @@ h4{
 
 
 .cardi2{
-    background-color: #fff;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px; 
     height: 200px;
     width: 300px;
-    display: flex;
     object-fit: cover;
 }
 
@@ -477,12 +499,10 @@ h4{
 }
 
 .cardi3{
-    background-color: #fff;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px; 
     height: 120px;
     width: 300px;
-    display: flex;
     margin-top: 24px;
     object-fit: cover;
 }
@@ -502,12 +522,10 @@ h4{
 
 
 .cardi4{
-    background-color: #fff;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px; 
     height: 400px;
     width: 300px;
-    display: flex;
     object-fit: cover;
 }
 
@@ -524,12 +542,10 @@ h4{
 }
 
 .cardi5{
-    background-color: #fff;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px; 
     height: 160px;
     width: 300px;
-    display: flex;
     object-fit: cover;
 }
 
@@ -538,12 +554,10 @@ h4{
 }
 
 .cardi6{
-    background-color: #fff;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px; 
     height: 160px;
     width: 300px;
-    display: flex;
     object-fit: cover;
 }
 
@@ -554,41 +568,38 @@ footer{
     padding: 40px 50px 50px 50px;
     background-color: #f2f2f2;
     margin: 0 auto;
-    width: 100%;
     max-width: 1440px;
     display: flex;
 
 }
 
-    footer > div{
-        width: calc( 100% / 3 );
-    }
 
-        footer div ul{
+        footer ul{
         margin: 0;
         padding: 0;
+        width: calc( 100% / 3 );
      }
 
-            footer div ul li{
+            footer ul li{
                 list-style-type: none;
                 margin-bottom: 10px;
             }
 
-                    footer div ul li:last-child{
+                    footer ul li:last-child{
                         margin-bottom: 0;
                     }
 
-                            footer div ul li:first-child{
+                            footer ul li:first-child{
                                 margin-bottom: 20px;
                                 font-weight: 700;
                             }
     
-                                    footer div ul li a{
+                                    footer ul li a{
                                     text-decoration: none;
                                     color: #000;
                                     }
 
-                                            footer div ul li a:hover{
+                                            footer ul li a:hover{
                                             text-decoration: underline;
                                             }
                                             
